@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+
+    <h2><%= message1 %></h2>
+    <br>
+    <table class = "table">
+      <thead>
+        <th>Activity</th>
+        <th>Date</th>
+      </thead>
+      <% records.forEach(function(row){%>
+        <tr>
+          <td><%= row.thing %></td>
+          <td><%= row.date %></td>
+        </tr>
+    <%  }) %>
+    </table>
+  </body>
+</html>
